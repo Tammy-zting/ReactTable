@@ -16,3 +16,6 @@
 - 列可调整
 - 自定义事件
 - 虚拟行
+
+### 效果
+![](https://github.com/Tammy-zting/ReactTable/blob/master/%E6%95%88%E6%9E%9C.png?raw=true)
