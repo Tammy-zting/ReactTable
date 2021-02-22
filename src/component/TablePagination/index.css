@@ -1,0 +1,19 @@
+.TablePagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.TablePagination label {
+    font-weight: 600;
+}
+
+.TablePagination main {
+    display: flex;
+  
+}
+
+.TablePagination main>.goPage,
+.TablePagination main>.pageSize {
+    margin-right: 10px;
+}

@@ -1,0 +1,138 @@
+main.container{
+    /* min-width: 100px;
+    min-height: 100px; */
+    overflow-x: auto;
+    border:1px solid rgba(34,36,38,.15);
+    border-radius:0.28571429rem;
+    /* width: 100%; */
+
+}
+.RTable{
+    border:none !important;
+    margin:0 !important;
+}
+
+.RTable .ui.checkbox {
+    vertical-align: middle !important;
+}
+
+.hiddenCloumnCheckbox {
+    vertical-align: bottom !important;
+}
+
+
+/* 调整列宽颜色 */
+.resizer {
+    display: inline-block;
+    background: #c4c4c4;
+    width: 1px;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translateX(50%);
+    z-index: 1;
+    touch-action: none;
+
+}
+
+.resizer.isResizing {
+    background-color: red;
+}
+
+
+/* 原子css */
+
+/* 基础控件Label */
+.baseLabel {
+    font-weight: 600;
+    margin-right: 10px;
+}
+/* margin 内边距 b代表bottom s代表10px */
+.margin-b-s{
+    margin-bottom: 10px;;
+}
+
+
+/* 丰富 semanctic样式方案 采用原子css思想*/
+
+/* 
+    比如semantic组件Select组件没有size属性接口，增加了以下css即可修复,
+    使用 <Select class="jy mini"/>
+*/
+/* 修复一 解决部分组件size接口缺失 增加例如jy设定命名空间 放置同名冲突*/
+
+/* 基本元素 */
+:root{
+    --mini:0.78571429em;
+    --tiny:0.85714286rem;
+    --small:0.92857143rem;
+    --medium:1rem;
+    --large:1.14285714rem;
+    --big:1.28571429rem;
+    --huge:1.42857143rem;
+    --massive:1.71428571rem;
+}
+.jy.mini {
+    font-size:var(--mini);
+}
+
+.jy.tiny {
+    font-size: var(--tiny);
+}
+
+.jy.small {
+    font-size: var(--small);
+}
+
+.jy.medium {
+    font-size: var(--medium);
+}
+
+.jy.large {
+    font-size: var(--large);
+}
+
+.jy.big {
+    font-size: var(--big);
+}
+
+.jy.huge {
+    font-size: var(--huge);
+}
+
+.jy.massive {
+    font-size: var(--massive);
+}
+
+/* 修复Select option大小 */
+.jy.mini.ui.dropdown .menu>.item{
+    font-size: var(--mini);
+}
+.jy.tiny.ui.dropdown .menu>.item{
+    font-size: var(--tiny);
+}
+.jy.samll.ui.dropdown .menu>.item{
+    font-size: var(--samll);
+}
+.jy.medium.ui.dropdown .menu>.item{
+    font-size: var(--medium);
+}
+
+.jy.large.ui.dropdown .menu>.item{
+    font-size: var(--large);
+}
+.jy.big.ui.dropdown .menu>.item{
+    font-size: var(--big);
+}
+.jy.huge.ui.dropdown .menu>.item{
+    font-size: var(--huge);
+}
+.jy.massive.ui.dropdown .menu>.item{
+    font-size: var(--massive);
+}
+
+/* 修复input type="range"此类型的样式 */
+input[type="range"] {
+    padding: 0px !important;
+}
